@@ -1,0 +1,15 @@
+h1.nama-warna {
+  color: red; /* pakai nama warna */
+}
+h1.hex {
+  color: #ff5733; /* pakai hex */
+}
+h1.rgb {
+  color: rgb(0, 128, 255); /* pakai rgb */
+}
+h1.rgba {
+  color: rgba(96, 83, 237, 100); /* hijau transparan */
+}
+h1.hsl {
+  color: hsl(280, 80%, 50%); /* ungu */
+}
