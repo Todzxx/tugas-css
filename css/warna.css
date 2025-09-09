@@ -8,7 +8,14 @@ h1.rgb {
   color: rgb(0, 128, 255); /* pakai rgb */
 }
 h1.rgba {
-  color: rgba(96, 83, 237, 100); /* hijau transparan */
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(240, 45, 253, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* pakai rgba */
 }
 h1.hsl {
   color: hsl(280, 80%, 50%); /* ungu */
