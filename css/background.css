@@ -1,5 +1,5 @@
 body {
-  background-color: #f0f0f0; /* warna latar halaman */
+  background-color: white; /* warna latar halaman */
 }
 
 .kotak1 {
@@ -8,17 +8,17 @@ body {
 }
 
 .kotak2 {
-  background-image: url("https://via.placeholder.com/300");
+  background-image: url(../image/background/wave.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
+  color: blue;
   padding: 50px;
   margin-top: 20px;
 }
 
 .kotak3 {
-  background: url("https://via.placeholder.com/600x400") no-repeat center/cover
+  background: url(../image/background/pemandanga.jpg) no-repeat center/cover
     fixed;
   height: 200px;
   color: yellow;
