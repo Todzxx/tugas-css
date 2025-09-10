@@ -1,0 +1,29 @@
+body {
+  background-color: #f0f0f0; /* warna latar halaman */
+}
+
+.kotak1 {
+  background-color: lightgreen; /* background warna */
+  padding: 20px;
+}
+
+.kotak2 {
+  background-image: url("https://via.placeholder.com/300");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.kotak3 {
+  background: url("https://via.placeholder.com/600x400") no-repeat center/cover
+    fixed;
+  height: 200px;
+  color: yellow;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 20px;
+  margin-top: 20px;
+}
