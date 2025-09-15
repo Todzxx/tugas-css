@@ -1,0 +1,30 @@
+.box {
+  width: 200px; /* ukuran konten */
+  height: 100px;
+  background: lightblue; /* warna background konten */
+
+  padding: 20px; /* jarak dalam */
+  border: 5px solid blue; /* garis tepi */
+  margin: 30px; /* jarak luar */
+}
+
+body {
+  display: flex; /* biar kotak sejajar horizontal */
+  gap: 20px; /* jarak antar elemen */
+}
+
+.box1 {
+  width: 150px;
+  height: 100px;
+  background: lightblue;
+  padding: 20px; /* jarak dalam */
+  border: 3px solid blue; /* garis tepi */
+}
+
+.box2 {
+  width: 150px;
+  height: 100px;
+  background: lightgreen;
+  margin: 30px; /* jarak luar */
+  border: 3px solid green; /* garis tepi */
+}
