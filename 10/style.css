@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Satuan Absolut */
+.px-unit {
+    width: 150px;
+    height: 100px;
+}
+.cm-unit {
+    width: 4cm;
+    height: 2cm;
+}
+.mm-unit {
+    width: 50mm;
+    height: 30mm;
+}
+.in-unit {
+    width: 1.5in;
+    height: 0.8in;
+}
+.pt-unit {
+    width: 100pt;
+    height: 50pt;
+}
+.pc-unit {
+    width: 8pc;
+    height: 4pc;
+}
+
+/* Satuan Relatif */
+.parent-em {
+    font-size: 16px; /* Base for em unit */
+    border: 2px dashed #ccc;
+    padding: 10px;
+    margin: 20px auto;
+    width: 90%;
+}
+.em-unit {
+    width: 10em; /* 10 * 16px = 160px */
+    height: 5em;  /* 5 * 16px = 80px */
+    background-color: #e0f7fa;
+    border-color: #00bcd4;
+}
+
+html {
+    font-size: 10px; /* Base for rem unit */
+}
+.parent-rem {
+    border: 2px dashed #ccc;
+    padding: 10px;
+    margin: 20px auto;
+    width: 90%;
+}
+.rem-unit {
+    width: 10rem; /* 10 * 10px = 100px */
+    height: 5rem;  /* 5 * 10px = 50px */
+    background-color: #e8f5e9;
+    border-color: #4caf50;
+}
+
+.percent-unit {
+    width: 50%; /* 50% dari lebar parent */
+    height: 100px; /* Tinggi tetap */
+    background-color: #fff3e0;
+    border-color: #ff9800;
+}
+
+.vw-unit {
+    width: 20vw; /* 20% dari lebar viewport */
+    height: 10vh; /* 10% dari tinggi viewport */
+    background-color: #f3e5f5;
+    border-color: #9c27b0;
+}
+.vh-unit {
+    width: 10vw; /* 10% dari lebar viewport */
+    height: 20vh; /* 20% dari tinggi viewport */
+    background-color: #ffebee;
+    border-color: #f44336;
+}
+.vmin-unit {
+    width: 15vmin; /* 15% dari nilai terkecil antara lebar/tinggi viewport */
+    height: 15vmin;
+    background-color: #e1f5fe;
+    border-color: #2196f3;
+}
+.vmax-unit {
+    width: 15vmax; /* 15% dari nilai terbesar antara lebar/tinggi viewport */
+    height: 15vmax;
+    background-color: #fbe9e7;
+    border-color: #ff5722;
+}
+
+/* Contoh Penggunaan Max/Min Width/Height */
+.responsive-box {
+    width: 90%;
+    max-width: 800px; /* Lebar maksimum 800px */
+    min-width: 200px; /* Lebar minimum 200px */
+    height: 150px;
+    background-color: #dcedc8;
+    border: 2px solid #8bc34a;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
