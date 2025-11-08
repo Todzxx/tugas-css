@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menggunakan Float di CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Menggunakan Float di CSS</h1>
+
+    <h2>Float Kiri</h2>
+    <div class="container">
+        <img src="https://via.placeholder.com/100x100?text=Gambar" alt="Placeholder Image" class="float-left">
+        <p>Ini adalah paragraf yang mengelilingi gambar yang di-float ke kiri. Teks akan mengalir di sekitar gambar, menciptakan tata letak yang sering terlihat di artikel berita atau blog. Properti <code>float: left;</code> membuat elemen bergerak ke kiri dan elemen lain akan mengalir di sisi kanannya.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="clearfix"></div> <!-- Clearfix untuk membersihkan float -->
+
+    <h2>Float Kanan</h2>
+    <div class="container">
+        <img src="https://via.placeholder.com/100x100?text=Gambar" alt="Placeholder Image" class="float-right">
+        <p>Ini adalah paragraf yang mengelilingi gambar yang di-float ke kanan. Teks akan mengalir di sekitar gambar, menciptakan tata letak yang serupa dengan float kiri, tetapi gambar berada di sisi kanan. Properti <code>float: right;</code> membuat elemen bergerak ke kanan dan elemen lain akan mengalir di sisi kirinya.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="clearfix"></div>
+
+    <h2>Multiple Floats</h2>
+    <div class="container">
+        <div class="box float-left">Kotak 1 (Float Kiri)</div>
+        <div class="box float-left">Kotak 2 (Float Kiri)</div>
+        <div class="box float-left">Kotak 3 (Float Kiri)</div>
+        <p>Teks ini berada setelah beberapa elemen yang di-float. Tanpa membersihkan float, teks ini mungkin akan muncul di samping elemen-elemen yang di-float, atau bahkan di bawahnya jika tidak ada cukup ruang.</p>
+    </div>
+    <div class="clearfix"></div>
+
+    <h2>Clearfix Example</h2>
+    <div class="container clearfix-parent">
+        <div class="box float-left">Kotak A</div>
+        <div class="box float-left">Kotak B</div>
+        <p>Paragraf ini berada di dalam container yang sama dengan elemen float, tetapi container ini menggunakan teknik clearfix untuk memastikan bahwa ia membungkus semua elemen float di dalamnya.</p>
+    </div>
+
+    <h2>Tanpa Clearfix (Masalah Tinggi Parent)</h2>
+    <div class="container no-clearfix-parent">
+        <div class="box float-left">Kotak X</div>
+        <div class="box float-left">Kotak Y</div>
+        <p>Perhatikan bagaimana parent ini tidak membungkus elemen float di dalamnya, menyebabkan masalah tata letak.</p>
+    </div>
+
+</body>
+</html>
