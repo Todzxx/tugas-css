@@ -1,0 +1,11 @@
+/* CSS untuk Internal Style */
+#internal p {
+    color: green;
+    font-weight: bold;
+}
+
+/* CSS untuk External Style Sheet */
+#external p {
+    color: red;
+    font-style: italic;
+}
