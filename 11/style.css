@@ -14,11 +14,15 @@ h1, h2 {
 
 .box-model-example {
     width: 300px;
-    height: 100px;
+    min-height: 150px; /* Increased height to accommodate more text */
     padding: 20px;
     border: 5px solid;
     margin: 20px auto;
     background-color: #fff;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -36,51 +40,67 @@ h1, h2 {
 /* Contoh Properti Box Model Individual */
 .element-margin {
     width: 200px;
-    height: 80px;
+    min-height: 80px;
     background-color: #ffeb3b;
     border: 2px solid #fbc02d;
     padding: 10px;
     margin: 30px auto; /* Margin atas dan bawah 30px, kiri dan kanan auto (tengah) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .element-border {
     width: 200px;
-    height: 80px;
+    min-height: 80px;
     background-color: #e0f7fa;
     border: 10px dashed #00bcd4; /* Border 10px, dashed, warna */
     padding: 10px;
     margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .element-padding {
     width: 200px;
-    height: 80px;
+    min-height: 80px;
     background-color: #ffebee;
     border: 2px solid #ef5350;
     padding: 40px; /* Padding 40px di semua sisi */
     margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .element-content {
     width: 200px;
-    height: 80px;
+    min-height: 80px;
     background-color: #e8f5e9;
     border: 2px solid #81c784;
     padding: 10px;
     margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .element-all-properties {
     width: 200px;
-    height: 80px;
+    min-height: 100px; /* Adjusted min-height */
     background-color: #f3e5f5;
     border: 5px solid #9c27b0;
     padding: 25px;
     margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     box-sizing: border-box; /* Agar lebar/tinggi mencakup padding dan border */
 }
