@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menentukan Ukuran Elemen dengan Satuan yang Tepat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Menentukan Ukuran Elemen dengan Satuan yang Tepat</h1>
+
+    <h2>Satuan Absolut</h2>
+    <div class="box px-unit">Ukuran 150px x 100px</div>
+    <div class="box cm-unit">Ukuran 4cm x 2cm</div>
+    <div class="box mm-unit">Ukuran 50mm x 30mm</div>
+    <div class="box in-unit">Ukuran 1.5in x 0.8in</div>
+    <div class="box pt-unit">Ukuran 100pt x 50pt</div>
+    <div class="box pc-unit">Ukuran 8pc x 4pc</div>
+
+    <h2>Satuan Relatif</h2>
+    <div class="parent-em">
+        <div class="box em-unit">Ukuran 10em x 5em (relatif terhadap font-size parent)</div>
+    </div>
+    <div class="parent-rem">
+        <div class="box rem-unit">Ukuran 10rem x 5rem (relatif terhadap font-size root)</div>
+    </div>
+    <div class="box percent-unit">Ukuran 50% x 30% (relatif terhadap parent)</div>
+    <div class="box vw-unit">Ukuran 20vw x 10vh</div>
+    <div class="box vh-unit">Ukuran 10vw x 20vh</div>
+    <div class="box vmin-unit">Ukuran 15vmin x 15vmin</div>
+    <div class="box vmax-unit">Ukuran 15vmax x 15vmax</div>
+
+    <h2>Contoh Penggunaan Max/Min Width/Height</h2>
+    <div class="responsive-box">
+        Kotak Responsif (max-width: 80%, min-width: 200px)
+    </div>
+
+</body>
+</html>
