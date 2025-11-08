@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintaks Dasar CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sintaks Dasar CSS yang Harus Dipahami</h1>
+
+    <div class="contoh-selector">
+        <h2>Selector</h2>
+        <p>Selector digunakan untuk "menemukan" atau memilih elemen HTML yang ingin diberi gaya.</p>
+        <p>Contoh: <code>p</code> memilih semua elemen paragraf.</p>
+        <p class="highlight">Ini adalah paragraf dengan kelas "highlight".</p>
+        <p id="unique">Ini adalah paragraf dengan ID "unique".</p>
+    </div>
+
+    <div class="contoh-deklarasi">
+        <h2>Deklarasi (Property dan Value)</h2>
+        <p>Setelah selector, ada blok deklarasi yang berisi satu atau lebih deklarasi CSS.</p>
+        <p>Setiap deklarasi terdiri dari properti CSS dan nilai, dipisahkan oleh titik dua (<code>:</code>).</p>
+        <p>Contoh: <code>color: blue;</code> (properti: <code>color</code>, nilai: <code>blue</code>)</p>
+        <p>Deklarasi dipisahkan oleh titik koma (<code>;</code>).</p>
+    </div>
+
+    <div class="struktur-lengkap">
+        <h2>Struktur Lengkap</h2>
+        <pre><code>
+selector {
+  property: value;
+  property: value;
+}
+        </code></pre>
+        <p>Contoh:</p>
+        <pre><code>
+p {
+  color: red;
+  font-size: 16px;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+#unique {
+  border: 1px solid green;
+}
+        </code></pre>
+    </div>
+
+</body>
+</html>
