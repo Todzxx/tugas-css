@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Text Shadow Examples */
+.text-shadow-simple {
+    text-shadow: 2px 2px #ccc; /* offset-x | offset-y | color */
+}
+
+.text-shadow-multiple {
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; /* Multiple shadows */
+    color: white;
+}
+
+.text-shadow-color {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* offset-x | offset-y | blur-radius | color */
+}
+
+.text-shadow-blur {
+    text-shadow: 0 0 8px #007bff; /* blur-radius */
+    color: #007bff;
+}
+
+.text-shadow-neon {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+}
+
+/* Box Shadow Examples */
+.box-shadow-simple {
+    box-shadow: 5px 5px #ccc; /* offset-x | offset-y | color */
+}
+
+.box-shadow-offset {
+    box-shadow: 10px 10px 5px #888888; /* offset-x | offset-y | blur-radius | color */
+}
+
+.box-shadow-blur {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* blur-radius */
+}
+
+.box-shadow-spread {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3); /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+.box-shadow-inset {
+    box-shadow: inset 0 0 10px #5cb85c; /* inset | offset-x | offset-y | blur-radius | color */
+    background-color: #dff0d8;
+}
+
+.box-shadow-multiple {
+    box-shadow:
+        3px 3px 5px rgba(0, 0, 0, 0.3),
+        -3px -3px 5px rgba(255, 255, 255, 0.5); /* Multiple shadows */
+}
+
+.box-shadow-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.box-shadow-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 12px 40px 0 rgba(0,0,0,0.19);
+}
