@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memahami Box Model di CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Memahami Box Model di CSS</h1>
+
+    <div class="box-model-example content-box">
+        <p>Ini adalah elemen dengan <code>box-sizing: content-box</code> (default).</p>
+        <p>Lebar dan tinggi yang ditentukan hanya berlaku untuk area konten.</p>
+        <p>Padding dan border akan ditambahkan di luar lebar/tinggi yang ditentukan.</p>
+    </div>
+
+    <div class="box-model-example border-box">
+        <p>Ini adalah elemen dengan <code>box-sizing: border-box</code>.</p>
+        <p>Lebar dan tinggi yang ditentukan mencakup padding dan border.</p>
+        <p>Area konten akan menyesuaikan diri.</p>
+    </div>
+
+    <h2>Contoh Properti Box Model</h2>
+
+    <div class="element-margin">
+        <p>Elemen ini memiliki <strong>margin</strong>.</p>
+        <p>Margin adalah ruang di luar border elemen.</p>
+    </div>
+
+    <div class="element-border">
+        <p>Elemen ini memiliki <strong>border</strong>.</p>
+        <p>Border adalah garis di sekitar padding dan konten.</p>
+    </div>
+
+    <div class="element-padding">
+        <p>Elemen ini memiliki <strong>padding</strong>.</p>
+        <p>Padding adalah ruang di antara border dan konten.</p>
+    </div>
+
+    <div class="element-content">
+        <p>Ini adalah <strong>konten</strong> elemen.</p>
+        <p>Area konten adalah tempat teks dan gambar muncul.</p>
+    </div>
+
+    <div class="element-all-properties">
+        <p>Elemen ini menunjukkan semua properti box model.</p>
+        <p>Margin, Border, Padding, dan Konten.</p>
+    </div>
+
+</body>
+</html>
