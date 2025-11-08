@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 1000px; /* Untuk memungkinkan scrolling dan melihat fixed/sticky */
+}
+
+h1, h2 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 250px;
+    height: 100px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-child {
+    width: 100px;
+    height: 50px;
+    background-color: #ffeb3b;
+    border: 1px solid #fbc02d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+/* Position: Static (Default) */
+.static-example {
+    /* position: static; (Ini adalah default, tidak perlu dideklarasikan) */
+    background-color: #e0f7fa;
+    border-color: #00bcd4;
+}
+
+/* Position: Relative */
+.relative-example {
+    position: relative;
+    background-color: #e8f5e9;
+    border-color: #4caf50;
+    top: 20px; /* Bergeser 20px dari posisi normalnya */
+    left: 20px; /* Bergeser 20px dari posisi normalnya */
+}
+
+.child-absolute {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffc107;
+    border-color: #ffa000;
+}
+
+/* Position: Absolute */
+.absolute-parent {
+    position: relative; /* Penting: parent harus diposisikan (non-static) */
+    width: 400px;
+    height: 200px;
+    background-color: #f3e5f5;
+    border-color: #9c27b0;
+    margin: 20px auto;
+}
+
+.absolute-example {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #ffebee;
+    border-color: #f44336;
+}
+
+.placeholder-for-absolute {
+    height: 250px; /* Untuk menunjukkan ruang yang ditinggalkan oleh elemen absolute */
+    margin: 20px auto;
+    width: 400px;
+    border: 1px dashed #ccc;
+    text-align: center;
+    line-height: 250px;
+    color: #666;
+}
+
+/* Position: Fixed */
+.fixed-example {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #c8e6c9;
+    border-color: #388e3c;
+    z-index: 1000; /* Pastikan elemen fixed berada di atas konten lain */
+}
+
+.long-content {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #eee;
+    padding: 10px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fff;
+}
+
+/* Position: Sticky */
+.sticky-parent {
+    height: 500px; /* Memberikan ruang scroll untuk parent */
+    overflow-y: auto;
+    border: 2px solid #795548;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fcfcfc;
+    padding: 10px;
+}
+
+.sticky-example {
+    position: sticky;
+    top: 0; /* Akan "menempel" di bagian atas saat discroll */
+    background-color: #bbdefb;
+    border-color: #1976d2;
+    z-index: 999;
+    margin: 0 auto 20px auto; /* Sesuaikan margin */
+}
