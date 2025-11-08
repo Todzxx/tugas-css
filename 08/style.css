@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+p {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #007bff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Font Family */
+.font-family-example {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Font Size */
+.font-size-example {
+    font-size: 1.2em; /* Menggunakan em untuk ukuran relatif */
+}
+
+/* Font Weight */
+.font-weight-example {
+    font-weight: bold; /* Atau bisa juga 700 */
+}
+
+/* Font Style */
+.font-style-example {
+    font-style: italic;
+}
+
+/* Text Transform */
+.text-transform-example {
+    text-transform: uppercase;
+}
+
+/* Line Height */
+.line-height-example {
+    line-height: 2.0; /* Mengatur tinggi baris */
+}
+
+/* Letter Spacing */
+.letter-spacing-example {
+    letter-spacing: 2px; /* Mengatur jarak antar huruf */
+}
+
+/* Word Spacing */
+.word-spacing-example {
+    word-spacing: 5px; /* Mengatur jarak antar kata */
+}
+
+/* Font Shorthand */
+.font-shorthand-example {
+    font: italic bold 1.3em 'Georgia', serif; /* style weight size family */
+}
