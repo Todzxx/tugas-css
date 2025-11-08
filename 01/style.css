@@ -3,30 +3,34 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #e0f7fa; /* Light blue */
+    color: #263238; /* Dark grey */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #00796b; /* Teal */
+    color: #ffffff; /* White */
     padding: 1rem 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    color: #ffeb3b; /* Amber */
 }
 
 section {
     padding: 20px;
     margin: 0 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    background-color: #ffffff; /* White */
+    border-bottom: 1px solid #b2dfdb; /* Light teal border */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+    margin-bottom: 15px;
+    border-radius: 8px;
 }
 
 section h2 {
-    color: #0056b3;
+    color: #d84315; /* Deep orange */
 }
 
 ul {
@@ -42,6 +46,7 @@ ol {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #004d40; /* Darker teal */
+    color: #ffffff; /* White */
+    margin-top: 20px;
 }
