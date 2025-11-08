@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 80%;
+    padding: 15px;
+    margin: 10px auto;
+    background-color: #fff;
+    border-width: 3px;
+    border-style: solid;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Border Styles */
+.border-solid { border-color: #4CAF50; border-style: solid; }
+.border-dashed { border-color: #f44336; border-style: dashed; }
+.border-dotted { border-color: #2196F3; border-style: dotted; }
+.border-double { border-color: #ff9800; border-style: double; }
+.border-groove { border-color: #673AB7; border-style: groove; }
+.border-ridge { border-color: #E91E63; border-style: ridge; }
+.border-inset { border-color: #00BCD4; border-style: inset; }
+.border-outset { border-color: #8BC34A; border-style: outset; }
+.border-none { border-style: none; background-color: #ccc; }
+
+/* Custom HR */
+.custom-hr {
+    border: none;
+    height: 5px;
+    background-color: #333;
+    margin: 40px auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+/* Pseudo-elements for lines */
+.underline-text {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.underline-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #9C27B0;
+}
+
+.overline-text {
+    position: relative;
+    display: inline-block;
+    padding-top: 5px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.overline-text::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFEB3B;
+}
+
+/* Box Shadow for lines */
+.box-shadow-line {
+    width: 80%;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 5px 0 #FF5722; /* Garis bawah tebal */
+}
