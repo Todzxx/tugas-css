@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memahami 6 Jenis Selektor di CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Memahami 6 Jenis Selektor di CSS</h1>
+
+    <section>
+        <h2>1. Universal Selector (<code>*</code>)</h2>
+        <p>Memilih semua elemen HTML di halaman.</p>
+        <div class="universal-example">
+            <p>Ini adalah paragraf di dalam div.</p>
+            <span>Ini adalah span di dalam div.</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Type Selector (Elemen)</h2>
+        <p>Memilih semua elemen HTML dengan nama tag tertentu.</p>
+        <p>Contoh: <code>p</code> akan memilih semua elemen paragraf.</p>
+        <span>Ini adalah elemen span.</span>
+    </section>
+
+    <section>
+        <h2>3. Class Selector (<code>.nama-kelas</code>)</h2>
+        <p>Memilih semua elemen HTML dengan atribut <code>class</code> tertentu.</p>
+        <p class="my-class">Ini adalah paragraf dengan kelas "my-class".</p>
+        <div class="my-class">Ini adalah div dengan kelas "my-class".</div>
+    </section>
+
+    <section>
+        <h2>4. ID Selector (<code>#nama-id</code>)</h2>
+        <p>Memilih elemen HTML dengan atribut <code>id</code> tertentu. ID harus unik dalam satu halaman.</p>
+        <p id="unique-id">Ini adalah paragraf dengan ID "unique-id".</p>
+    </section>
+
+    <section>
+        <h2>5. Group Selector (<code>selector1, selector2</code>)</h2>
+        <p>Memilih beberapa elemen HTML yang berbeda dan menerapkan gaya yang sama.</p>
+        <h3>Ini adalah H3</h3>
+        <h4>Ini adalah H4</h4>
+    </section>
+
+    <section>
+        <h2>6. Descendant Selector (<code>ancestor descendant</code>)</h2>
+        <p>Memilih elemen yang merupakan turunan dari elemen lain.</p>
+        <div class="parent">
+            <p>Ini adalah paragraf di dalam elemen dengan kelas "parent".</p>
+            <span>Ini adalah span di dalam elemen dengan kelas "parent".</span>
+            <ul>
+                <li>Item daftar di dalam parent.</li>
+            </ul>
+        </div>
+        <p>Ini adalah paragraf di luar parent.</p>
+    </section>
+
+</body>
+</html>
