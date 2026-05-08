@@ -1,115 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Inter', Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  padding: 40px 20px;
+  color: #e0e0e0;
+  line-height: 1.6;
 }
 
 h1 {
-    color: #0056b3;
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  font-size: 2.8em;
+  font-weight: 800;
+  margin-bottom: 50px;
+  background: linear-gradient(135deg, #e94560, #f5a623);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -1px;
+  animation: fadeDown 0.8s ease-out;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 p {
-    background-color: #fff;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-left: 5px solid #007bff;
-    line-height: 1.6;
+  max-width: 800px;
+  margin: 15px auto;
+  padding: 18px 22px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-left: 5px solid #e94560;
+  transition: all 0.4s ease;
+  color: rgba(255, 255, 255, 0.85);
+  animation: fadeIn 0.6s ease-out both;
 }
 
-/* Penjajaran Teks */
-.text-align-left {
-    text-align: left;
+p:hover {
+  transform: translateX(6px);
+  border-color: #f5a623;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
-.text-align-center {
-    text-align: center;
+p:nth-child(2) { animation-delay: 0.05s; }
+p:nth-child(3) { animation-delay: 0.1s; }
+p:nth-child(4) { animation-delay: 0.15s; }
+p:nth-child(5) { animation-delay: 0.2s; }
+p:nth-child(6) { animation-delay: 0.25s; }
+p:nth-child(7) { animation-delay: 0.3s; }
+p:nth-child(8) { animation-delay: 0.35s; }
+p:nth-child(9) { animation-delay: 0.4s; }
+p:nth-child(10) { animation-delay: 0.45s; }
+p:nth-child(11) { animation-delay: 0.5s; }
+p:nth-child(12) { animation-delay: 0.55s; }
+p:nth-child(13) { animation-delay: 0.6s; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
-.text-align-right {
-    text-align: right;
-}
+.text-align-left { text-align: left; border-left-color: #3498db; }
+.text-align-center { text-align: center; border-left-color: #2ecc71; }
+.text-align-right { text-align: right; border-left-color: #e74c3c; }
+.text-align-justify { text-align: justify; border-left-color: #9b59b6; }
 
-.text-align-justify {
-    text-align: justify;
-}
+.text-decoration-underline { text-decoration: underline; color: #2ecc71; border-left-color: #2ecc71; }
+.text-decoration-overline { text-decoration: overline; color: #f1c40f; border-left-color: #f1c40f; }
+.text-decoration-line-through { text-decoration: line-through; color: #e74c3c; border-left-color: #e74c3c; }
+.text-decoration-none { text-decoration: none; font-weight: 700; color: #95a5a6; border-left-color: #95a5a6; }
 
-/* Dekorasi Teks */
-.text-decoration-underline {
-    text-decoration: underline;
-    color: #28a745;
-}
+.text-transform-uppercase { text-transform: uppercase; color: #1abc9c; border-left-color: #1abc9c; letter-spacing: 1px; }
+.text-transform-lowercase { text-transform: lowercase; color: #3498db; border-left-color: #3498db; }
+.text-transform-capitalize { text-transform: capitalize; color: #e67e22; border-left-color: #e67e22; }
 
-.text-decoration-overline {
-    text-decoration: overline;
-    color: #ffc107;
-}
+.letter-spacing-example { letter-spacing: 5px; font-size: 1.1em; border-left-color: #e74c3c; }
+.word-spacing-example { word-spacing: 12px; font-size: 1.1em; border-left-color: #2ecc71; }
 
-.text-decoration-line-through {
-    text-decoration: line-through;
-    color: #dc3545;
-}
+.line-height-example { line-height: 2.2; border-left-color: #9b59b6; }
 
-.text-decoration-none {
-    text-decoration: none;
-    font-weight: bold;
-    color: #6c757d;
-}
+.text-indent-example { text-indent: 60px; border-left-color: #f39c12; }
 
-/* Transformasi Teks */
-.text-transform-uppercase {
-    text-transform: uppercase;
-    color: #17a2b8;
-}
-
-.text-transform-lowercase {
-    text-transform: lowercase;
-    color: #6f42c1;
-}
-
-.text-transform-capitalize {
-    text-transform: capitalize;
-    color: #fd7e14;
-}
-
-/* Spasi Huruf dan Kata */
-.letter-spacing-example {
-    letter-spacing: 3px;
-    font-size: 1.1em;
-}
-
-.word-spacing-example {
-    word-spacing: 10px;
-    font-size: 1.1em;
-}
-
-/* Tinggi Baris */
-.line-height-example {
-    line-height: 2.0;
-}
-
-/* Indentasi Teks */
-.text-indent-example {
-    text-indent: 50px;
-}
-
-/* Spasi Putih */
 .white-space-nowrap {
-    white-space: nowrap;
-    overflow: hidden; /* Sembunyikan overflow jika teks terlalu panjang */
-    text-overflow: ellipsis; /* Tambahkan elipsis untuk teks yang overflow */
-    border: 1px dashed #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-left-color: #1abc9c;
+  cursor: pointer;
+}
+.white-space-nowrap:hover {
+  white-space: normal;
+  overflow: visible;
 }
 
-/* Bayangan Teks */
 .text-shadow-example {
-    font-size: 2em;
-    font-weight: bold;
-    color: #343a40;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    padding: 20px;
-    background-color: #e9ecef;
+  font-size: 2.2em;
+  font-weight: 800;
+  color: #fff;
+  text-shadow:
+    0 0 7px rgba(255,255,255,0.3),
+    0 0 21px rgba(233,69,96,0.5),
+    0 0 42px rgba(233,69,96,0.3);
+  text-align: center;
+  padding: 30px;
+  border-left-color: #e94560;
+  background: rgba(233, 69, 96, 0.06);
 }

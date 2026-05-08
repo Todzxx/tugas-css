@@ -1,110 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  --primary: #667eea;
+  --secondary: #764ba2;
+  --accent: #f093fb;
+  --text: #2d3436;
+  --bg-card: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f8f8f8;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Inter', Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 40px 20px;
+  color: var(--text);
+  line-height: 1.6;
 }
 
 h1 {
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 40px;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 15px;
+  text-align: center;
+  font-size: 2.8em;
+  font-weight: 800;
+  margin-bottom: 50px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -1px;
+  animation: fadeDown 0.8s ease-out;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 section {
-    background-color: #ffffff;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border-left: 5px solid #2ecc71;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 35px;
+  background: var(--bg-card);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid var(--primary);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: slideIn 0.6s ease-out both;
+  position: relative;
+  overflow: hidden;
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+  transform: translate(50%, -50%);
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.12);
+}
+
+section:nth-child(2) { animation-delay: 0.1s; }
+section:nth-child(3) { animation-delay: 0.2s; }
+section:nth-child(4) { animation-delay: 0.3s; }
+section:nth-child(5) { animation-delay: 0.4s; }
+section:nth-child(6) { animation-delay: 0.5s; }
+section:nth-child(7) { animation-delay: 0.6s; }
+
+section:nth-child(2) { border-color: #f39c12; }
+section:nth-child(3) { border-color: #e74c3c; }
+section:nth-child(4) { border-color: #28a745; }
+section:nth-child(5) { border-color: #ffc107; }
+section:nth-child(6) { border-color: #9b59b6; }
+section:nth-child(7) { border-color: #2980b9; }
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
 h2 {
-    color: #3498db;
-    margin-top: 0;
-    margin-bottom: 15px;
-    border-bottom: 1px dashed #ccc;
-    padding-bottom: 10px;
+  color: #2c3e50;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed #e0e0e0;
 }
 
 p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+  color: #555;
 }
 
 code {
-    background-color: #eef;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family: 'Courier New', Courier, monospace;
-    color: #c0392b;
+  background: #eef2ff;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  color: #e74c3c;
+  font-size: 0.9em;
 }
 
-/* 1. Universal Selector */
 .universal-example * {
-    border: 1px solid #f39c12;
-    padding: 5px;
-    margin: 5px 0;
-    display: block;
+  border: 2px solid #f39c12;
+  padding: 10px;
+  margin: 8px 0;
+  display: block;
+  border-radius: 6px;
+  background: rgba(243, 156, 18, 0.05);
+  transition: all 0.3s;
+}
+.universal-example *:hover {
+  background: rgba(243, 156, 18, 0.1);
+  transform: scale(1.01);
 }
 
-/* 2. Type Selector */
 span {
-    color: #e74c3c;
-    font-weight: bold;
+  color: #e74c3c;
+  font-weight: 600;
 }
 
-/* 3. Class Selector */
 .my-class {
-    background-color: #d4edda;
-    color: #155724;
-    padding: 8px;
-    border-left: 3px solid #28a745;
-    margin-top: 10px;
+  background: linear-gradient(135deg, #d4edda, #c3e6cb);
+  color: #155724;
+  padding: 12px;
+  border-left: 4px solid #28a745;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-weight: 500;
 }
 
-/* 4. ID Selector */
 #unique-id {
-    background-color: #ffeeba;
-    color: #856404;
-    padding: 10px;
-    border: 2px solid #ffc107;
-    margin-top: 10px;
-    font-style: italic;
+  background: linear-gradient(135deg, #ffeeba, #ffdf7e);
+  color: #856404;
+  padding: 14px;
+  border: 2px solid #ffc107;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.2);
 }
 
-/* 5. Group Selector */
 h3, h4 {
-    color: #9b59b6;
-    background-color: #f8f0fc;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-right: 10px;
+  color: #9b59b6;
+  background: linear-gradient(135deg, #f8f0fc, #f3e5f5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 5px 10px 5px 0;
+  font-weight: 600;
+  border: 1px solid rgba(155, 89, 182, 0.2);
+  transition: all 0.3s;
+}
+h3:hover, h4:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(155, 89, 182, 0.2);
 }
 
-/* 6. Descendant Selector */
+.parent {
+  background: #f0f4f8;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 10px;
+  border: 2px dashed #2980b9;
+}
 .parent p {
-    color: #2980b9;
-    font-weight: bold;
-    background-color: #eaf4fb;
-    padding: 5px;
-    border-left: 2px solid #2980b9;
+  color: #2980b9;
+  font-weight: 600;
+  background: rgba(41, 128, 185, 0.08);
+  padding: 8px 12px;
+  border-left: 4px solid #2980b9;
+  border-radius: 4px;
 }
-
 .parent span {
-    color: #1abc9c;
-    font-style: italic;
+  color: #1abc9c;
+  font-style: italic;
 }
-
 .parent ul {
-    list-style-type: square;
-    color: #34495e;
+  list-style-type: square;
+  color: #34495e;
+  padding-left: 30px;
 }
-
 .parent li {
-    color: #34495e;
+  color: #34495e;
+  margin: 5px 0;
 }
